@@ -16,10 +16,44 @@
 
 # Analyze Data
 
-## 
+## To begin my analysis of my data I create Rank columns for expected and actual touchdowns. This will show me where Quarterbacks rank in actual touchdowns and expected touchdowns. The next part of my analysis is to identify negative and positive regression candidates. To do this I subtract the Expected touchdowns from the Actual touchdowns. A negative number means that they would trend towards scoring fewer touchdowns. A positive number means they would trend towards scoring more touchdowns. This gives me the information I need to make decisions on which Quarterbacks to priortize in drafts and which Quarterbacks to possibly avoid when drafting.
 
 # Interpret Your Data and Graphical Output
 
 ## The first graphical output is the yardline_100 graph - This graph shows the probablity of a touchdown from the 99 yard line to the 1 yardline. The graph shows the further you get from the endzone the probablity of a pass touchdown goes down. This makes sense to me and was expected. If I would have got different results, I would have looked into my data to make sure there weren't any errors.
 
 ## The second graphical out is showing that if a player is below the blue line they are in line for positive regression meaning potentially more touchdowns and if a player is above the line they are possibly a candidate for fewer touchdowns. This is significant to me because touchdowns are the most important stat when it comes to fantasy football so if you able to identify players who could potentially do better this season and draft them it can give you an advantage. I was also able to make a second graph that is interactive base on player selection so you can select the individual quarterback you are interested in and see where they fall on the chart.
+
+
+## Data Dictionary
+
+### qb_df
+
+| Field             | Data Type | Description                                                |
+| ----------------  | --------- | ---------------------------------------------------------- |
+| pass_attempt      | Float     | to throw the football to a reciever                        |
+| pass_touchdown    | Float     | A touchdown scored by throwing the football                |
+| yardline_100      | Float     | This accounts for each yardline on a football field        |
+| two_point_attempt | Float     | The extra point play after a touchdown that counts as two  |
+
+### qb_prob
+
+| Field                           | Data Type | Description                                                                   |
+| ------------------------------  | --------- | ----------------------------------------------------------------------------- |
+| yardline_100                    | Float     | This accounts for each yardline on a football field                           |
+| pass_touchdown                  | Float     | A touchdown scored by throwing the football                                   |
+| probability_of_pass_touchdown   | Float     | The percentage chance of a passing touchdown from each individual yardline    |
+
+### exp_df
+
+| Field                      | Data Type | Description                                                    |
+| ----------- -------------- | --------- | -------------------------------------------------------------- |
+| Player                     | String    | The Quarterback in the dataset.                                |
+| ID                         | String    | Indentification number in dataset.                             |
+| Team                       | String    | The NFL team the Quarterback plays for                         |
+| Expected Touchdowns        | Float     | The expected number of touchdowns based on probablility model  |
+| Actual Tochdowns           | Float     | The actual statistical number of touchdowns thrown             |
+| Expected Tochdowns Rank    | Float     | The rank of expected touchdowns thrown                         |
+| Actual Tochdowns Rank      | Float     | The rank of actual touchdowns thrown                           |
+| Regression Candidate       | Float     | Positive or negative chance at touchdowns thrown               |
+| Regression Rank Candidate  | Float     | Rank of positive or negative chance at touchdowns thrown       |
