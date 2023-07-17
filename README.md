@@ -47,7 +47,7 @@
 ### exp_df
 
 | Field                      | Data Type | Description                                                    |
-| ----------- -------------- | --------- | -------------------------------------------------------------- |
+| -------------------------  | --------- | -------------------------------------------------------------- |
 | Player                     | String    | The Quarterback in the dataset.                                |
 | ID                         | String    | Indentification number in dataset.                             |
 | Team                       | String    | The NFL team the Quarterback plays for                         |
