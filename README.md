@@ -57,3 +57,4 @@
 | Actual Tochdowns Rank      | Float     | The rank of actual touchdowns thrown                           |
 | Regression Candidate       | Float     | Positive or negative chance at touchdowns thrown               |
 | Regression Rank Candidate  | Float     | Rank of positive or negative chance at touchdowns thrown       |
+
