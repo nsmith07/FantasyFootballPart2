@@ -10,7 +10,7 @@
 
 # Manipulate and Clean Data
 
-## I started out using some keywords to find Quarterback related columns in my dataset. Once I found these, I created a Quarterback dataframe with only the revelent columns to NFL Quarterbacks. I sorted by yardline_100 to find the instances of a passing touchdown from each yardline. I did a groupby with pass_touchdown and yardline_100 and got the value counts to create a new qb_prob dataframe. The purpose of this dataframe is to give me the probability of a passing touchdown from each yardline. Once I get this dataframe, I realize that I have the probability of not scoring a passing touchdown but I don't want this so I drop any value that equals zero meaning no passing touchdown. Now, I'm ready to Merge my data with the 2022 NFL Season data. Once, I do this I have a little more clean up to do. I rename several of the columns to make them much more cleaner to read and understand.
+## I started out using some keywords to find Quarterback related columns in my dataset. Once I found these, I created a Quarterback dataframe with only the revelent columns to NFL Quarterbacks. I sorted by yardline_100 to find the instances of a passing touchdown from each yardline. I did a groupby with pass_touchdown and yardline_100 and got the value counts to create a new qb_prob dataframe. The purpose of this dataframe is to give me the probability of a passing touchdown from each yardline. Once I get this dataframe, I realize that I have the probability of not scoring a passing touchdown but I don't want this so I drop any value that equals zero meaning no passing touchdown. Now, I'm ready to Merge my data with the 2022 NFL Season data. Once, I do this I have a little more clean up to do. I rename several of the columns to make them much more cleaner to read and understand. The merging of these two data files will fulfills the requirement. I import one of the data sets in line 2 with the seasons variable. Then merge it with the 2022 season data on line 11.
 
 
 
@@ -22,10 +22,10 @@
 
 ## The first graphical output is the yardline_100 graph - This graph shows the probablity of a touchdown from the 99 yard line to the 1 yardline. The graph shows the further you get from the endzone the probablity of a pass touchdown goes down. This makes sense to me and was expected. If I would have got different results, I would have looked into my data to make sure there weren't any errors.
 
-## The second graphical out is showing that if a player is below the blue line they are in line for positive regression meaning potentially more touchdowns and if a player is above the line they are possibly a candidate for fewer touchdowns. This is significant to me because touchdowns are the most important stat when it comes to fantasy football so if you able to identify players who could potentially do better this season and draft them it can give you an advantage. I was also able to make a second graph that is interactive base on player selection so you can select the individual quarterback you are interested in and see where they fall on the chart.
+## The second graphical out is showing that if a player is below the blue line they are in line for positive regression meaning potentially more touchdowns and if a player is above the line they are possibly a candidate for fewer touchdowns. This is significant to me because touchdowns are the most important stat when it comes to fantasy football so if you able to identify players who could potentially do better this season and draft them it can give you an advantage. I was also able to make a second graph that is interactive base on player selection so you can select the individual quarterback you are interested in and see where they fall on the chart. I fulfills the visulaization requirement with the three different visualization in Seaborn (line 8) then the matplotlib visualizations (line 19)
 
 
-## Data Dictionary
+## Data Dictionary(fulfills the best practices requirement)
 
 ### qb_df
 
